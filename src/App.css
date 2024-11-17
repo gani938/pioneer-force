@@ -36,3 +36,125 @@
     transform: rotate(360deg);
   }
 }
+
+.primary-color {
+  color: #e51937;
+}
+
+.text-hover-red:hover {
+  background-color: red;
+}
+
+.link-text {
+  color: black;
+}
+
+.link-text:hover {
+  color: #e51937;
+  cursor: pointer;
+}
+
+/*'&:hover': {
+           color: 'white'
+         }*/
+
+.header-card {
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 13rem;
+  /*box-shadow: 0px 0px 6px 0px #ff0000 !important;*/
+}
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ff000029;
+  height: 10rem;
+}
+
+.scroll-container2::before {
+  content: '';
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    color-stop(8.96%, rgba(28, 28, 28, 0.08)),
+    color-stop(107.17%, #1c1c1c)
+  );
+  background: linear-gradient(270deg, rgb(229 25 55 / 0%) 8.96%, #ff00007a 107.17%);
+  width: 193px;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  z-index: 2;
+}
+
+.scroll-container2::after {
+  content: '';
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(8.96%, rgba(28, 28, 28, 0.08)),
+    color-stop(107.17%, #1c1c1c)
+  );
+  background: linear-gradient(90deg, rgb(229 25 55 / 0%) 8.96%, #ff00007a 107.17%);
+  width: 193px;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  right: -5px;
+  z-index: 2;
+}
+
+.scroll-content {
+  display: flex;
+  white-space: nowrap;
+  column-gap: 2.5rem;
+}
+
+/*.item {*/
+/*  padding: 10px 20px;*/
+/*  margin: 0 10px;*/
+/*  background-color: #007bff;*/
+/*  color: white;*/
+/*  text-align: center;*/
+/*  border-radius: 5px;*/
+/*  font-size: 16px;*/
+/*  transition: box-shadow 0.3s ease-in-out;*/
+/*}*/
+
+.item {
+  color: Black;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  margin: 0px;
+}
+
+.address-line {
+  font-size: 0.7vw;
+}
+
+.sub-footer {
+  line-height: 22px !important;
+  margin-top: 3px !important;
+  font-size: 11px !important;
+}
+
+.sub-footer:hover {
+  color: #e51937;
+  cursor: pointer;
+}
+
+.address {
+  line-height: 12px !important;
+  margin-top: 3px !important;
+  font-size: 10px !important;
+}
